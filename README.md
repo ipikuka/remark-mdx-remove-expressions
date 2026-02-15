@@ -247,7 +247,7 @@ I like to contribute the Unified / Remark / MDX ecosystem, so I recommend you to
 [badge-typescript]: https://img.shields.io/npm/types/remark-mdx-remove-expressions
 [url-typescript]: https://www.typescriptlang.org/
 
-[badge-codecov]: https://codecov.io/gh/ipikuka/remark-mdx-remove-expressions/graph/badge.svg?token=U6CFVM0DRE
+[badge-codecov]: https://codecov.io/gh/ipikuka/remark-mdx-remove-expressions/graph/badge.svg?token=8idzMS2vAJ
 [url-codecov]: https://codecov.io/gh/ipikuka/remark-mdx-remove-expressions
 
 [badge-type-coverage]: https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fipikuka%2Fremark-mdx-remove-expressions%2Fmaster%2Fpackage.json
