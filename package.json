@@ -1,6 +1,6 @@
 {
   "name": "remark-mdx-remove-expressions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Remark plugin to remove MDX expressions within curlybraces {} in MDX content",
   "type": "module",
   "exports": "./dist/esm/index.js",
