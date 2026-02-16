@@ -21,8 +21,9 @@ const source = dedent`
 `;
 
 describe("remark-mdx-remove-expressions with next-mdx-remote", () => {
+  // the diff is empty h1 (containing js expression) instead of removing it
   // ******************************************
-  it("blockJS is true", async () => {
+  it("blockJS is true by default", async () => {
     expect(await processMdx(source)).toMatchInlineSnapshot(`
       "<h1></h1>
       <p>Hi, welcome to MDX expressions!</p>
@@ -34,14 +35,14 @@ describe("remark-mdx-remove-expressions with next-mdx-remote", () => {
   });
 
   // ******************************************
+  // the diff is it throws an error because of the access to process.env in JSX attribute
   it("only dangerous", async () => {
-    expect(await processMdx(source, { blockJS: false })).toMatchInlineSnapshot(`
-      "<h1>Test Title</h1>
-      <p>Hi, welcome to MDX expressions!</p>
-      <p>expressions: 2 true true end</p>
-      <p>Process environment language is .</p>
-      <h2>Test Component</h2>
-      <p>removed attributes:[dangerous]</p>"
+    await expect(processMdx(source, { blockJS: false })).rejects
+      .toThrowErrorMatchingInlineSnapshot(`
+      [Error: [next-mdx-remote] error compiling MDX:
+      Security: Access to 'process' properties is not allowed
+
+      More information: https://mdxjs.com/docs/troubleshooting-mdx]
     `);
   });
 });
