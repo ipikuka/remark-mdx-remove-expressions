@@ -23,7 +23,7 @@ export const processMdx = async (
   const element = React.createElement(result.default, {
     components: { Component },
     value: "test-value",
-    frontmatter: { title: "Test Heading" },
+    frontmatter: { title: "Test Title" },
     rest: { x: "test-x", y: "test-y" },
   });
 

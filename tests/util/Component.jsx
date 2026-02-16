@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Component = ({ id, enabled, isOkey, value, ...rest }) => {
+export const Component = ({ id, enabled, isOkey, value, dangerous, ...rest }) => {
   const results = [];
 
   if (id === undefined) {
@@ -17,6 +17,10 @@ export const Component = ({ id, enabled, isOkey, value, ...rest }) => {
 
   if (value === undefined) {
     results.push("value");
+  }
+
+  if (dangerous === undefined) {
+    results.push("dangerous");
   }
 
   if (!Object.keys(rest).length) {
