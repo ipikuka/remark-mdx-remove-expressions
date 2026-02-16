@@ -35,7 +35,7 @@ describe("remark-mdx-remove-expressions with next-mdx-remote", () => {
   });
 
   // ******************************************
-  // the diff is it throws an error because of the access to process.env in JSX attribute
+  // the diff is it throws an error because of the access to process.env
   it("only dangerous", async () => {
     await expect(processMdx(source, { blockJS: false })).rejects
       .toThrowErrorMatchingInlineSnapshot(`
