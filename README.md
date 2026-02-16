@@ -134,7 +134,7 @@ It is a **boolean** option whether or not stripping JSX expression atrributes an
 By default it is **true**, meaningly JSX expression atrributes and JSX attributes with value expression are also removed from MDX document when you use **`remark-mdx-remove-expressions`**. 
 
 ```typescript
-const options: EvaluateOptions = {
+const options: MdxRemoveExpressionsOptions = {
   includeJsxAttributes: false;
 };
 ```
@@ -148,7 +148,7 @@ It is a **boolean** option whether or not stripping only dangerous javascript ex
 By default it is **false**, meaningly all expressions are removed when you use **`remark-mdx-remove-expressions`**. 
 
 ```typescript
-const options: EvaluateOptions = {
+const options: MdxRemoveExpressionsOptions = {
   onlyDangerousExpressions: true;
 };
 ```
