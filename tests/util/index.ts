@@ -5,7 +5,7 @@ import gfm from "remark-gfm";
 import remarkStringify from "remark-stringify";
 import type { VFileCompatible } from "vfile";
 
-import plugin, { type MdxRemoveExpressionsOptions } from "../../src";
+import plugin, { type MdxRemoveExpressionsOptions } from "../../src/index.js";
 
 export const processMdxWithoutPlugin = async (content: VFileCompatible) => {
   const compiler = unified().use(remarkParse).use(remarkMdx).use(gfm).use(remarkStringify);

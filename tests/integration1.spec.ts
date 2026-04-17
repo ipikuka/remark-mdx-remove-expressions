@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import dedent from "dedent";
 
-import { processMdx } from "./util/integration1";
+import { processMdx } from "./util/integration1.js";
 
 const source = dedent`
   # {props.frontmatter.title}

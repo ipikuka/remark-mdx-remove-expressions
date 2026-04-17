@@ -3,8 +3,8 @@ import ReactDOMServer from "react-dom/server";
 import { evaluate } from "next-mdx-remote-client/rsc";
 import remarkGfm from "remark-gfm";
 
-import plugin, { type MdxRemoveExpressionsOptions } from "../../src";
-import { Component } from "./Component";
+import plugin, { type MdxRemoveExpressionsOptions } from "../../src/index.js";
+import { Component } from "./Component.jsx";
 
 type Options = MdxRemoveExpressionsOptions & { withoutPlugin?: boolean };
 

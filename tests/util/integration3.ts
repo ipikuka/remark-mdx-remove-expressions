@@ -3,7 +3,7 @@ import ReactDOMServer from "react-dom/server";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
-import { Component } from "./Component";
+import { Component } from "./Component.jsx";
 
 type Options = { blockJS?: boolean; blockDangerousJS?: boolean };
 

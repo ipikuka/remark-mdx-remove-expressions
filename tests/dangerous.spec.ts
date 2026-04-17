@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import dedent from "dedent";
 
-import { processMdxWithPlugin } from "./util/index";
+import { processMdxWithPlugin } from "./util/index.js";
 
 const source = dedent`
   # Dangerous expressions

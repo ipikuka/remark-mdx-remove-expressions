@@ -5,8 +5,8 @@ import * as runtime from "react/jsx-runtime";
 import remarkGfm from "remark-gfm";
 import type { VFileCompatible } from "vfile";
 
-import plugin, { type MdxRemoveExpressionsOptions } from "../../src";
-import { Component } from "./Component";
+import plugin, { type MdxRemoveExpressionsOptions } from "../../src/index.js";
+import { Component } from "./Component.jsx";
 
 type Options = MdxRemoveExpressionsOptions & { withoutPlugin?: boolean };
 

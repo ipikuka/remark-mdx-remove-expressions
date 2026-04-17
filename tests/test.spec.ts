@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import dedent from "dedent";
 
-import { processMdxWithoutPlugin, processMdxWithPlugin } from "./util/index";
+import { processMdxWithoutPlugin, processMdxWithPlugin } from "./util/index.js";
 
 const source = dedent`
   # {props.title}

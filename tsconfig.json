@@ -6,12 +6,14 @@
     "moduleResolution": "Node16",
     "strict": true,
     "skipLibCheck": true, // needed for namespace JSX
+    "jsx": "preserve", // needed for importing .jsx files in tests
+    "allowJs": true, // needed for importing .jsx files in tests
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "inlineSources": true,
-    "outDir": "dist",
+    "noEmit": true,
     "noImplicitReturns": true
   },
-  "include": ["src"]
+  "include": ["src", "tests"]
 }
