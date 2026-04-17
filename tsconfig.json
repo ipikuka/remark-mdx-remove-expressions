@@ -5,8 +5,7 @@
     "module": "Node16",
     "moduleResolution": "Node16",
     "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "skipLibCheck": true, // needed for namespace JSX
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
