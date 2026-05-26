@@ -176,7 +176,7 @@ I like to contribute the Unified / Remark / MDX ecosystem, so I recommend you to
 
 ### Support My Work ([become a sponsor](https://github.com/sponsors/ipikuka) 🚀)
 
-If you find **`remark-mdx-remove-expressions`** or any of my other projects is useful and helpful in your projects, please consider supporting my work. Your sponsorship means a lot to me and keeps these projects alive and updated! 💖
+If you find **`remark-mdx-remove-expressions`** or any of my other projects is useful and helpful, please consider supporting my work. Your sponsorship means a lot to me and keeps these projects alive and updated! 💖
 
 My sponsors are going to be featured at the very top of the page and proudly displayed on my [Sponsor Wall](https://github.com/sponsors/ipikuka).
 
