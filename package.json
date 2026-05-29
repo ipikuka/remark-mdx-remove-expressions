@@ -41,9 +41,10 @@
     "remark",
     "plugin",
     "remark plugin",
-    "mdxjsEsm",
-    "mdx remove esm",
-    "mdx remove mdxjsEsm"
+    "MdxJs",
+    "MdxJsx",
+    "mdx expressions",
+    "mdx remove expressions"
   ],
   "author": "ipikuka <talatkuyuk@gmail.com>",
   "license": "MIT",
